@@ -1,10 +1,12 @@
 package test.com.h2rd.refactoring.unit;
 
-import com.h2rd.refactoring.usermanagement.User;
-import com.h2rd.refactoring.usermanagement.UserDao;
+import java.util.Arrays;
+import java.util.ConcurrentModificationException;
+
 import org.junit.Test;
 
-import java.util.Arrays;
+import com.h2rd.refactoring.usermanagement.User;
+import com.h2rd.refactoring.usermanagement.UserDao;
 
 public class UserDaoUnitTest {
 

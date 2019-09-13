@@ -6,6 +6,8 @@ import com.h2rd.refactoring.web.UserResource;
 import junit.framework.Assert;
 import org.junit.Test;
 
+import java.util.Arrays;
+
 import javax.ws.rs.core.Response;
 
 public class UserResourceUnitTest {
@@ -22,6 +24,8 @@ public class UserResourceUnitTest {
         User user = new User();
         user.setName("fake user");
         user.setEmail("fake@user.com");
+        user.setRoles(Arrays.asList("admin", "master"));
+
         userDao.saveUser(user);
 
         Response response = userResource.getUsers();

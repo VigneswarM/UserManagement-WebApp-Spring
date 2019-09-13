@@ -6,11 +6,20 @@ import java.util.List;
 @XmlRootElement
 public class User {
 
-    String name;
-    String email;
-    List<String> roles;
+    private String name;
+    private String email;
+    private List<String> roles;
 
-    public String getName() {
+    public User(){
+    	
+    }
+    
+    @Override
+	public String toString() {
+		return "User [name=" + name + ", email=" + email + ", roles=" + roles + "]";
+	}
+    
+	public String getName() {
         return name;
     }
     public void setName(String name) {
@@ -28,4 +37,6 @@ public class User {
     public void setRoles(List<String> roles) {
         this.roles = roles;
     }
+    
+    
 }

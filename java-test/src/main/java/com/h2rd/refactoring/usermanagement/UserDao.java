@@ -9,7 +9,7 @@ public class UserDao {
 
 	private static ArrayList<User> users;
 
-	public static volatile UserDao userDao;
+	private static volatile UserDao userDao;
 
 	// Singleton class
 	private UserDao() {
